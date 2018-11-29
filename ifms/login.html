@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>i-FMS 로그인 페이지</title>
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/jquery.selectbox.css" rel="stylesheet">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.selectbox-0.2.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/selectbox_control.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="js/PIE.js"></script>
+		<![endif]-->
+  <script>
+	function loginCheck() {
+		var userid = document.getElementById("userid");
+		var userpass = document.getElementById("userpass");
+
+		var user_input = [userid, userpass];
+		var userinfo = ["아이디", "비밀번호"];
+
+		for(var i=0; user_input.length; i++) {
+			if(user_input[i].value == "") {
+				alert(userinfo[i] + "가 빈칸입니다. 확인해주세요.");
+				user_input[i].focus();
+				return false;
+			}
+		}
+	}
+  </script>
+ </head>
+ <body class="y-hidden">
+ <div class="wrapper gray">
+	<div class="login_wrap">
+		<div class="login_container">
+			<div class="login_box">
+				<div class="login_left">
+					<img src="img/ifms_login_logo.png" alt="i-FMS 로고" />
+				</div>
+				<div class="login_right">
+					<div class="login_area">
+						<p class="userid_area">
+							<label for="userid">ID</label>
+							<input type="text" name="userid" id="userid" />
+						</p>
+						<p class="userpass_area">
+							<label for="userpass">PW</label>
+							<input type="password" name="userpass" id="userpass" />
+						</p>
+						<p class="login_btn">
+							<input type="button" name="userlogin" value="로그인" onclick="loginCheck();">
+						</p>
+						<!-- <ul class="login_menu">
+							<li class="menu01"><a href="#">아이디 찾기</a></li>
+							<li><a href="#">비밀번호 찾기</a></li>
+						</ul> -->
+						<dl class="login_consult">
+							<dt>고객센터 상담안내</dt>
+							<dd>1566-5050</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>i-FMS 사용자 페이지</title>
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/jquery.selectbox.css" rel="stylesheet">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.selectbox-0.2.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/selectbox_control.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="js/PIE.js"></script>
+		<![endif]-->
+ </head>
+ <body>
+ <div class="wrapper">
+	<div class="header">
+		<div class="ifms_header">
+			<div class="ifms_logo">
+				<a href="index.html"><img src="img/ifms_logo.png" alt="i-FMS 로고 이미지" /></a>
+			</div>
+			<div class="ifms_loginfo">
+				<ul>
+					<li class="loginfo01"><span class="loginfo_user">홍길동</span> 님 환영합니다.</li>
+					<li class="loginfo02"><a href="config_user.html">정보수정</a></li>
+					<li class="loginfo_btn"><a href="../login.html">로그아웃</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="ifms_gnb">
+				<li><a href="facility_list.html">공동시설관리</a></li>
+				<li><a href="civil_list.html">민원관리</a></li> 
+				<li><a href="ext_list.html">연장근무관리</a></li>
+				<li><a href="config_user.html">사용자 관리</a></li>
+				<li><a href="notice.html">공지사항</a></li>
+				<li><a href="event.html">행사 및 이벤트</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="main_top">
+			<div class="ifms_guest">
+				<p class="top_icon"><img src="img/public_icon.png"></p>
+				<dl class="top_process">
+					<dt>공동시설관리</dt>
+					<dd>
+						<span class="top_dept pub_icon01">예약</span>
+						<span class="top_count on">99건</span>
+					</dd>
+					<dd>
+						<span class="top_dept pub_icon02">대기</span>
+						<span class="top_count blue">99건</span>
+					</dd>
+					<dd class="last">
+						<span class="top_dept pub_icon03">승인</span>
+						<span class="top_count blue">59건</span>
+					</dd>
+				</dl>
+			</div>
+			<div class="ifms_guest">
+				<p class="top_icon"><img src="img/civil_icon.png"></p>
+				<dl class="top_process">
+					<dt>민원관리</dt>
+					<dd>
+						<span class="top_dept pub_icon01">신청</span>
+						<span class="top_count on">99건</span>
+					</dd>
+					<dd>
+						<span class="top_dept pub_icon02">대기</span>
+						<span class="top_count blue">99건</span>
+					</dd>
+					<dd>
+						<span class="top_dept pub_icon04">진행</span>
+						<span class="top_count blue">99건</span>
+					</dd>
+					<dd class="last">
+						<span class="top_dept pub_icon03">완료</span>
+						<span class="top_count blue">9건</span>
+					</dd>
+				</dl>
+			</div>
+			<div class="ifms_guest last">
+				<p class="top_icon"><img src="img/ext_icon.png"></p>
+				<dl class="top_process">
+					<dt>연장근무관리</dt>
+					<dd>
+						<span class="top_dept pub_icon01">예약</span>
+						<span class="top_count on">99건</span>
+					</dd>
+					<dd>
+						<span class="top_dept pub_icon02">대기</span>
+						<span class="top_count blue">99건</span>
+					</dd>
+					<dd>
+						<span class="top_dept pub_icon03">승인</span>
+						<span class="top_count blue">99건</span>
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+		<div class="main_bottom">
+			<div class="ifms_box">
+				<h4 class="notice_icon n_ico01">공지사항</h4>
+				<ul class="notice_list">
+					<li>
+						<p class="notice_head"><a href="notice_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="notice_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="notice_view.html">i-fms에서 인재를 모집하고 있습니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="notice_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="notice_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+				</ul>
+				<p class="notice_more"><a href="notice.html"><img src="img/notice_more.png"></a></p>
+			</div>
+			<div class="ifms_box">
+				<h4 class="notice_icon n_ico02">행사 및 이벤트</h4>
+				<ul class="notice_list">
+					<li>
+						<p class="notice_head"><a href="event_view.html">i-fms에서 12월 이벤트를 하고 있습..</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="event_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="event_view.html">i-fms에서 인재를 모집하고 있습니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="event_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+					<li>
+						<p class="notice_head"><a href="event_view.html">i-fms에서 알려드립니다.</a></p>
+						<p class="notice_date">15.12.08</p>
+					</li>
+				</ul>
+				<p class="notice_more"><a href="event.html"><img src="img/notice_more.png"></a></p>
+			</div>
+			<div class="ifms_box customer last">
+				<h4 class="customer_h">고객센터 상담안내</h4>
+				<p class="customer_phone01">1566-5050</p>
+				<p class="customer_phone02">
+					<span class="oversea">해외</span>
+					<span class="oversea_phone">82-53-742-5050</span>
+				</p>
+				<div class="customer_time">
+					<div class="time_left">
+						<img src="img/customer_icon.png">
+					</div>
+					<div class="time_right">
+						<dl>
+							<dt>평일</dt>
+							<dd>10:00 ~ 18:00</dd>
+						</dl>
+						<dl>
+							<dt>점심시간</dt>
+							<dd>10:00 ~ 18:00</dd>
+						</dl>
+					</div>
+				</div>
+				<p class="wkend">토,일요일은 휴무입니다.</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="ifms_foot">
+			<!-- <div class="foot_top">
+				<ul class="foot_lnb">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">약관</a></li>
+					<li class="last"><a href="#">개인정보보호방침</a></li>
+				</ul>
+			</div> -->
+			<div class="foot_bottom">
+				<div class="foot_logo">
+					<img src="img/ifms_footlogo.jpg">
+				</div>
+				<div class="foot_address">
+					<p>대표전화 : 1566-5050 / 1588-5050 | 해외 : 82-53-742-5050</p>
+					<p>Copyright DAEGU BANK. All Rights Reserved.</p.
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+</html>

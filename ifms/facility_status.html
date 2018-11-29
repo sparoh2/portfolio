@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>i-FMS 관리자 페이지</title>
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link href="css/jquery.selectbox.css" rel="stylesheet">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.selectbox-0.2.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/selectbox_control.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="js/PIE.js"></script>
+		<![endif]-->
+ </head>
+ <body>
+ <div class="wrapper">
+	<div class="header">
+		<div class="ifms_header">
+			<div class="ifms_logo">
+				<a href="index.html"><img src="img/ifms_logo.png"></a>
+			</div>
+			<div class="ifms_loginfo">
+				<ul>
+					<li class="loginfo01"><span class="loginfo_user">홍길동</span> 님 환영합니다.</li>
+					<li class="loginfo02"><a href="config_myinfo.html">정보수정</a></li>
+					<li class="loginfo_btn"><a href="login.html">로그아웃</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="ifms_gnb">
+				<li class="on"><a href="facility.html">공동시설관리</a></li>
+				<li><a href="civil.html">민원관리</a></li> 
+				<li><a href="ext.html">연장근무관리</a></li>
+				<li><a href="config_user.html">시스템 설정</a></li>
+				<li><a href="log_day.html">접속로그조회</a></li>
+				<li><a href="notice.html">공지사항</a></li>
+				<li><a href="event.html">행사 및 이벤트</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="sub_lnb">
+			<h3 class="sub_title">공동시설관리</h3>
+			<div class="lnb_nav">
+				<ul>
+					<li class="first"><a href="index.html"><img src="img/lnb_home.png" alt="홈으로 가기" /></a></li>
+					<li><a href="#">공동시설관리</a></li>
+					<li><a href="#">시설이용현황</a></li>
+				</ul>
+			</div>
+			<ul class="lnb_list clearfix">
+				<li><a href="facility.html">사용신청조회</a></li>
+				<li class="on"><a href="facility_status.html">시설이용현황</a></li>
+				<li><a href="facility_list_user.html">이용자별 이력조회</a></li>
+				<li><a href="facility_list_group.html">공동시설별 이력조회</a></li>
+				<li><a href="facility_sign.html">공동시설등록</a></li>
+			</ul>
+		</div>
+		<div class="sub_contents">
+			<div class="table_search p0">
+				<div class="select_date">
+					<table>
+						<tr>
+							<td>
+								<a href="#"><img src="img/table_prev.png" alt="이전" class="table_pager"></a>
+							</td>
+							<td>
+								<strong>2015.12</strong>
+							</td>
+							<td style="width:20%;">
+								<a href="#"><img src="img/table_next.png" alt="다음" class="table_pager"></a>
+							</td>
+							<td style="width:20%;">
+								<span class="date_btn on"><a href="#">오늘</a></span>
+							</td>
+							<td style="width:20%;">
+								<span class="date_btn"><a href="#">이번주</a></span>
+							</td>
+							<td style="width:20%;">
+								<span class="date_btn"><a href="#">다음주</a></span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="date_status">
+					<table>
+						<tr>
+							<td><div class="status_box ok border"></div></td>
+							<td>예약가능</td>
+							<td><div class="status_box comp border"></div></td>
+							<td>예약완료</td>
+							<td><div class="status_box none border"></div></td>
+							<td>예약불가</td>
+						</tr>
+					</table>
+				</div>
+				<!-- <div class="search_btn">
+					<a href="#">조회</a>
+				</div> -->
+			</div>
+			<table class="table center mb10">
+				<colgroup>
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+				</colgroup>
+				<tr>
+					<th class="now"><a href="#">12월 7일 (월)</a></th>
+					<th><a href="#">12월 8일 (화)</a></th>
+					<th><a href="#">12월 9일 (수)</a></th>
+					<th><a href="#">12월 10일 (목)</a></th>
+					<th><a href="#">12월 11일 (금)</a></th>
+					<th><a href="#">12월 12일 (토)</a></th>
+					<th><a href="#">12월 13일 (일)</a></th>
+				</tr>
+			</table>
+
+			<table class="table center">
+				<thead>
+					<tr class="pn">
+						<th class="th_bg w120">시설</th>
+						<th class="th_bg w50" colspan="2">6:00</th>
+						<th class="th_bg w50" colspan="2">7:00</th>
+						<th class="th_bg w50" colspan="2">8:00</th>
+						<th class="th_bg w50" colspan="2">9:00</th>
+						<th class="th_bg w50" colspan="2">10:00</th>
+						<th class="th_bg w50" colspan="2">11:00</th>
+						<th class="th_bg w50" colspan="2">12:00</th>
+						<th class="th_bg w50" colspan="2">13:00</th>
+						<th class="th_bg w50" colspan="2">14:00</th>
+						<th class="th_bg w50" colspan="2">15:00</th>
+						<th class="th_bg w50" colspan="2">16:00</th>
+						<th class="th_bg w50" colspan="2">17:00</th>
+						<th class="th_bg w50" colspan="2">18:00</th>
+						<th class="th_bg w50" colspan="2">19:00</th>
+						<th class="th_bg w50" colspan="2">20:00</th>
+						<th class="th_bg w50" colspan="2">21:00</th>
+						<th class="th_bg w50" colspan="2">22:00</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="pn">
+						<td>회의실-101</td>
+						<!-- 06:00 -->
+						<td class="none">　</td>
+						<td class="none">　</td>
+						<!-- 07:00 -->
+						<td class="none">　</td>
+						<td class="none">　</td>
+						<!-- 08:00 -->
+						<td class="none">　</td>
+						<td class="none">　</td>
+						<!-- 09:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 10:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 11:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 12:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 13:00 -->
+						<td class="none">　</td>
+						<td class="none">　</td>
+						<!-- 14:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 15:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 16:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 17:00 -->
+						<td class="comp">　</td>
+						<td class="comp">　</td>
+						<!-- 18:00 -->
+						<td class="ok">　</td>
+						<td class="ok">　</td>
+						<!-- 19:00 -->
+						<td class="ok">　</td>
+						<td class="ok">　</td>
+						<!-- 20:00 -->
+						<td class="ok">　</td>
+						<td class="ok">　</td>
+						<!-- 21:00 -->
+						<td class="none">　</td>
+						<td class="none">　</td>
+						<!-- 22:00 -->
+						<td class="none">　</td>
+						<td class="none">　</td>
+					</tr>
+					<tr class="pn">
+						<td>회의실-201</td>
+						<!-- 06:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 07:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 08:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 09:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 10:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 11:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 12:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 13:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 14:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 15:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 16:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 17:00 -->
+						<td class="comp"></td>
+						<td class="comp"></td>
+						<!-- 18:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 19:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 20:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 21:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 22:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+					</tr>
+					<tr class="pn">
+						<td>회의실-202</td>
+						<!-- 06:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 07:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 08:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 09:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 10:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 11:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 12:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 13:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 14:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 15:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 16:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 17:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 18:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 19:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 20:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 21:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 22:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+					</tr>
+					<tr class="pn">
+						<td>회의실-203</td>
+						<!-- 06:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 07:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 08:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 09:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 10:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 11:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 12:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 13:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 14:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 15:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 16:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 17:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 18:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 19:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 20:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 21:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 22:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+					</tr>
+					<tr class="pn">
+						<td>회의실-204</td>
+						<!-- 06:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 07:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 08:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 09:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 10:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 11:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 12:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 13:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 14:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 15:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 16:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 17:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 18:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 19:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 20:00 -->
+						<td class="ok"></td>
+						<td class="ok"></td>
+						<!-- 21:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+						<!-- 22:00 -->
+						<td class="none"></td>
+						<td class="none"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="ifms_foot">
+			<!-- <div class="foot_top">
+				<ul class="foot_lnb">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">약관</a></li>
+					<li class="last"><a href="#">개인정보보호방침</a></li>
+				</ul>
+			</div> -->
+			<div class="foot_bottom">
+				<div class="foot_logo">
+					<img src="img/ifms_footlogo.jpg">
+				</div>
+				<div class="foot_address">
+					<p>대표전화 : 1566-5050 / 1588-5050 | 해외 : 82-53-742-5050</p>
+					<p>Copyright DAEGU BANK. All Rights Reserved.</p.
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+</html>

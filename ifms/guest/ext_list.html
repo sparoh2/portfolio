@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>i-FMS 사용자 페이지</title>
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link href="css/jquery.selectbox.css" rel="stylesheet">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.selectbox-0.2.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/selectbox_control.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="js/PIE.js"></script>
+		<![endif]-->
+ </head>
+ <body>
+ <div class="wrapper">
+	<div class="header">
+		<div class="ifms_header">
+			<div class="ifms_logo">
+				<a href="index.html"><img src="img/ifms_logo.png" alt="i-FMS 로고 이미지" /></a>
+			</div>
+			<div class="ifms_loginfo">
+				<ul>
+					<li class="loginfo01"><span class="loginfo_user">홍길동</span> 님 환영합니다.</li>
+					<li class="loginfo02"><a href="config_user.html">정보수정</a></li>
+					<li class="loginfo_btn"><a href="../login.html">로그아웃</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="ifms_gnb">
+				<li><a href="facility_list.html">공동시설관리</a></li>
+				<li><a href="civil_list.html">민원관리</a></li> 
+				<li class="on"><a href="ext_list.html">연장근무관리</a></li>
+				<li><a href="config_user.html">사용자 관리</a></li>
+				<li><a href="notice.html">공지사항</a></li>
+				<li><a href="event.html">행사 및 이벤트</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="sub_lnb">
+			<h3 class="sub_title">연장근무관리</h3>
+			<div class="lnb_nav">
+				<ul>
+					<li class="first"><a href="index.html"><img src="img/lnb_home.png" alt="홈으로 가기" /></a></li>
+					<li><a href="#">연장근무관리</a></li>
+					<li><a href="#">연장이력조회</a></li>
+				</ul>
+			</div>
+			<ul class="lnb_list clearfix">
+				<li><a href="ext_add.html">연장신청</a></li>
+				<li class="on"><a href="ext_list.html">연장이력조회</a></li>
+			</ul>
+		</div>
+		<div class="sub_contents">
+			<div class="table_search">
+				<p class="sorted_day2">
+					<strong>연장기간</strong>
+					<input type="text" value="2015-01-20">
+					<span class="calendar_btn"><a href="#"><img src="img/ico_calendar.png" alt="달력 보기"/></a>~</span>
+					<input type="text" value="2015-02-10">
+					<span class="calendar_btn"><a href="#"><img src="img/ico_calendar.png" alt="달력 보기"/></a></span>
+				</p>
+				<p class="sorted_day3">
+					<select class="sorted_months_user">
+					  <option value="당월">당월</option>
+					  <option value="3개월">3개월</option>
+					  <option value="사용자지정">사용자지정</option>
+					</select>
+				</p>
+				<p class="sorted_name">
+					<span class="search_btn_l blue"><a href="#">조회</a></span>
+					<span class="search_btn_r"><a href="#"><img src="img/download_excel.png" alt="엑셀파일로 다운받기" /></a>
+				</p>
+			</div>
+			<table class="table center pointer">
+				<colgroup>
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:9%;" />
+					<col style="width:7%;" />
+					<col style="width:15%;" />
+					<col style="width:15%;" />
+					<col style="width:5%;" />
+					<col style="width:11%;" />
+					<col style="width:5%;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="th_bg">순번</th>
+						<th class="th_bg">상태</th>
+						<th class="th_bg">신청일</th>
+						<th class="th_bg">신청구역</th>
+						<th class="th_bg">연장 시작시간</th>
+						<th class="th_bg">연장 종료시간</th>
+						<th class="th_bg">신청자</th>
+						<th class="th_bg">전화번호</th>
+						<th class="th_bg">승인자</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr onclick="document.location = 'ext_view.html';">
+						<td>1</td>
+						<td>대기</td>
+						<td>2015-12-08</td>
+						<td>3F_A</td>
+						<td>2015-12-08 19:00</td>
+						<td>2015-12-11 23:00</td>
+						<td>김예약</td>
+						<td>010-1234-5678</td>
+						<td>김소장</td>
+					</tr>
+					<tr class="comp" onclick="document.location = 'ext_view.html';">
+						<td>2</td>
+						<td>승인</td>
+						<td>2015-12-08</td>
+						<td>4F_A</td>
+						<td>2015-12-08 19:00</td>
+						<td>2015-12-11 23:00</td>
+						<td>김예약</td>
+						<td>010-1234-5678</td>
+						<td>김소장</td>
+					</tr>
+					<tr class="comp" onclick="document.location = 'ext_view.html';">
+						<td>3</td>
+						<td>승인</td>
+						<td>2015-12-08</td>
+						<td>4F_A</td>
+						<td>2015-12-08 19:00</td>
+						<td>2015-12-11 23:00</td>
+						<td>김예약</td>
+						<td>010-1234-5678</td>
+						<td>김소장</td>
+					</tr>
+					<tr onclick="document.location = 'ext_view.html';">
+						<td>4</td>
+						<td>대기</td>
+						<td>2015-12-08</td>
+						<td>3F_A</td>
+						<td>2015-12-08 19:00</td>
+						<td>2015-12-11 23:00</td>
+						<td>김예약</td>
+						<td>010-1234-5678</td>
+						<td>김소장</td>
+					</tr>
+					<tr onclick="document.location = 'ext_view.html';">
+						<td>5</td>
+						<td>대기</td>
+						<td>2015-12-08</td>
+						<td>3F_A</td>
+						<td>2015-12-08 19:00</td>
+						<td>2015-12-11 23:00</td>
+						<td>김예약</td>
+						<td>010-1234-5678</td>
+						<td>김소장</td>
+					</tr>
+					<tr onclick="document.location = 'ext_view.html';">
+						<td>6</td>
+						<td>대기</td>
+						<td>2015-12-08</td>
+						<td>3F_A</td>
+						<td>2015-12-08 19:00</td>
+						<td>2015-12-11 23:00</td>
+						<td>김예약</td>
+						<td>010-1234-5678</td>
+						<td>김소장</td>
+					</tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="ifms_foot">
+			<!-- <div class="foot_top">
+				<ul class="foot_lnb">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">약관</a></li>
+					<li class="last"><a href="#">개인정보보호방침</a></li>
+				</ul>
+			</div> -->
+			<div class="foot_bottom">
+				<div class="foot_logo">
+					<img src="img/ifms_footlogo.jpg">
+				</div>
+				<div class="foot_address">
+					<p>대표전화 : 1566-5050 / 1588-5050 | 해외 : 82-53-742-5050</p>
+					<p>Copyright DAEGU BANK. All Rights Reserved.</p.
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+</html>

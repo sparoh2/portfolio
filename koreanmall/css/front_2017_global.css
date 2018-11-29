@@ -1,0 +1,1219 @@
+@charset "utf-8";
+
+.comu_contents { 
+	width:840px;
+	padding:0;
+	float: right;
+}
+
+.help { 
+	width:1100px;
+	position:relative; 
+}
+
+.help h2 { 
+	font-size:30px;
+	line-height:40px;
+	color:#222;
+	font-weight:500;
+	padding:10px 0 20px 0; 
+}
+
+.helpMenu { 
+	float:left;
+	width:200px; 
+	padding:0 10px; 
+	font-size:15px; 
+	line-height:25px; 
+}
+
+.helpMenu li { 
+	height:25px;
+}
+
+.helpMenu a.on { 
+	color:#fff;
+	background-color:#666;
+	padding:3px 5px;
+}
+
+.helpMenu a.off { 
+	color:#777;
+	padding:3px 5px; 
+}
+
+.helpList {
+	float:left;
+	width:840px;
+	font-size:16px;
+	font-weight:500;
+	padding-left:15px 
+}
+
+.helpList li .faq_list { 
+	background:url('https://img.koreanmall.com/skin/images/us/cscenter/ico_h2.gif') left center no-repeat;
+	padding-left:20px;
+	color:#000;
+	border-bottom:1px solid #444;
+}
+
+.helpList li { 
+	padding:10px 0;
+}
+
+.faq_in_list {
+	background:url('https://img.koreanmall.com/skin/images/us/cscenter/ico_h2.gif') left top no-repeat;
+	padding-left:20px;
+	color:#000;
+	border-bottom:1px solid #444;
+	font-weight:bold;
+	font-size:20px;
+	padding-bottom:8px;
+	margin-bottom:20px;
+}
+
+.pay_menu { 
+	width:1080px !important;
+}
+
+.pay_menu ul li table p { 
+	float:left;
+	margin-right:70px;
+}
+.pay_table {
+	margin-top:25px;
+}
+.pay_table p {
+	font-size:12px;
+	font-weight:600;
+}
+
+.list_04 li { 
+	border-bottom:none !important;
+}
+
+.pay_cancel {
+	width:400px;
+	border:1px solid #bababd;
+}
+
+.pay_cancel .pay_tit1 { 
+	font-size:30px;
+	font-weight:bold;
+	color:#444;
+	text-align:center;
+	line-height:70px;
+	height:70px;
+	letter-spacing:-1px;
+	background-color:#f8f7f8;
+	border-bottom:1px solid #bababd;
+}
+
+.pay_cancel .pay_tit2 { 
+	font-size:17px;
+	font-weight:bold;
+	color:#444;
+	text-align:center;
+	line-height:30px;
+	height:50px;
+	letter-spacing:-1px;
+	background-color:#f5f5f5;
+	border-bottom:1px solid #bababd;
+	padding:20px 10px;
+}
+
+.pay_cancel .pay_tit3 { 
+	font-size:20px;
+	 font-weight:bold;
+	 color:#777;
+	 text-align:center;
+	 line-height:50px;
+	 height:50px;
+	 letter-spacing:-1px;
+	 background-color:#ffffff;
+	 border-bottom:1px solid #bababd;
+}
+
+.pay_cancel .con {
+	padding-left:20px;
+	color:#555;
+	height:40px;
+	line-height:40px;
+	display:block;
+	font-size:17px;
+}
+
+.pay_cancel .pt30 { padding-top:30px}
+.pay_cancel .pt20 { padding-top:20px}
+.pay_cancel .pb30 { padding-bottom:30px}
+.pay_cancel .con_red { color:#ee1414; font-weight:bold; }
+.pay_cancel .bt1 { border-top:1px solid #bababd ;}
+.pay_cancel .pc { 
+	text-align:center;
+	height:20px;
+	line-height:20px;
+	font-size:12px;
+	background-color:#f8f7f8; 
+}
+
+.pay_cancel .clos_btn {
+	background-color:#369fe1;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	width:150px;
+	height:50px;
+	line-height:50px;
+	font-size:18px;
+	margin:0 auto;
+	cursor:pointer;
+}
+
+.pay_cancel .pl0 { padding-left:0 !important }
+
+.mpt_area .mp_list .aa { width:230px; !important}
+.mpt_area .mp_list .aa2 { width:200px; !important}
+.mpt_area .mp_list .aa3 { width:200px; !important}
+.mpt_area .mp_list_sub a:hover { 
+	letter-spacing:normal !important;
+	font-weight:normal;
+	color:#000;
+}
+
+.mpt_area .mp_list_sub .on a { letter-spacing:normal !important}
+.mpt_area .mp_list_sub .on a:hover { font-weight::bold !important}
+
+.stle_01 a { 
+	color:#000;
+	font-size:12px;
+	font-weight:normal;
+}
+.stle_01 b:hover {
+	text-decoration:underline !important;
+}
+.stle_01 a.on {
+	color:#ff3912 !important;
+	font-weight:bold !important;
+	text-decoration: none !important;
+}
+
+.stle_01 b { text-decoration:underline; font-weight:normal; }
+.stle_02 { display:none; }
+.stle_gohome { text-decoration:none; }
+.stle_gohome:hover { text-decoration:underline; }
+
+.item_slist { background-color:#fff }
+.item_slist a { color:#222 }
+.line_09, .line_10, .line_01 { display:none; }
+
+.select_sub2 { height:inherit !important }
+.select_sub2 a { 
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	font-family:'Verdana';
+}
+
+.bf7f7f7 { background-color:#f9f9f9}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { z-index:300 }
+.bx-wrapper .bx-pager.bx-default-pager a { background-color:#ccc; margin:0 3px; }
+
+.bx-wrapper .bx-prev {
+    left: 0px;
+    background: url('https://img.koreanmall.com/skin/images/us/main_roll_prevbt.png');
+}
+
+.bx-wrapper .bx-next {
+	right: 0px;
+	background: url('https://img.koreanmall.com/skin/images/us/main_roll_nextbt.png');
+}
+.bx-wrapper .bx-next:hover {
+	background-position: 0 0;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    outline: 0;
+	margin-top : 0px;
+    width: 36px;
+    height: 72px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+#newmain_wrap > div.gallery > div > div.bx-viewport > ul > li:nth-child(1) > div.bx-wrapper > div.bx-controls.bx-has-controls-direction { display:none }
+#bx-pager > a img { 
+	filter: gray; /* IE6-9 */
+	 padding:3px;
+	 -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+	 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+}
+#bx-pager > a.active img {
+	 padding:0;
+	 border:3px solid #ffc425;
+	 filter: normal;
+	 -webkit-filter: grayscale(0);
+	 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+#mpg_layer { width:170px; }
+
+.sti_area p+p+p+p { 
+	color:#c40000;
+	 font-weight:bold;
+	 font-size:14px;
+	 font-family:'Verdana';
+}
+#main_container > div.mbodySub_contents > div > table > tbody > tr > td > div > p.pt5 { 
+	color:#c40000;
+	 font-weight:bold;
+	 font-size:14px;
+	 font-family:verdana;
+	 text-align:left !important;
+	 letter-spacing:-1px 
+} 
+#goods_list > table > tbody > tr > td > div > p { text-align:left !important}
+#goods_list > table > tbody > tr > td > div > p.review.mt10, #flashArea > table > tbody > tr > td > div.sti_area > p.review.mt10 { 
+	font-weight:normal;
+	 color:#222;
+	 font-size:12px 
+}
+#flashArea > table > tbody > tr > td > div.sti_area > p:nth-child(6) { 
+	color:#c40000;
+	 font-weight:bold;
+	 font-size:14px;
+	 font-family:'Verdana';
+}
+#flashArea > table > tbody > tr > td > div.sti_area > p.mt8 { 
+	text-align:left !important;
+	 font-size:14px;
+	 font-family:'Verdana';
+}
+#flashArea > table > tbody > tr > td > div.sti_area > p:nth-child(7), #flashArea > table > tbody > tr > td > div.sti_area > p:nth-child(6) { 
+	text-align:left !important;
+}
+
+#main_container > div.mbodySub_contents > div.item_sslist:nth-child(10) { background-color:#f9f9f9}
+
+#main_container > div.main_sitemap > ul > li > ul > li > a { font-family:arial !important }
+
+#main_container > div.mbodySub_contents > div.fr.pt30 > h2, #main_container > div.mbodySub_contents > div.fl.pt30 > h2 { 
+	font-size:18px; 
+}
+#main_container > div.mbodySub_contents > div.p10.pt14.pl5 > h2 b a { 
+	font-size:14px;
+	font-weight:normal !important;
+}
+
+#newFooter .FooterCenterWrap {
+	width:1100px;
+	margin:0 auto;
+	position:relative;
+	background:none !important;
+}
+#goods_list > table.sti_table > tbody > tr > td > div > div:nth-child(2) > a:nth-child(1) > img { 
+	display:none;
+}
+#goods_list > table > tbody > tr > td > div > div.fl > span > img { 
+	display:none;
+}
+#goods_list > table > tbody > tr > td > div > div > a:nth-child(2) > img {
+	display:none;
+}
+#goods_list > table > tbody > tr > td > div > p.review.mt10, #flashArea > table > tbody > tr > td > div.sti_area > p.review.mt10 { 
+	display:none; 
+}
+#goods_list > table > tbody > tr > td > div > div.fr.mt10, #flashArea > table > tbody > tr > td > div.sti_area > div.fr.mt10  { 
+	float:left !important;
+	margin-top:5px !important;
+}
+#flashArea > table > tbody > tr > td > div.sti_area > div.fl.mt6 > span > img, #flashArea > table > tbody > tr > td > div.sti_area > div.fr.pt6 > a > img { 
+	display:none;
+}
+#flashArea > table > tbody > tr > td > div.sti_area > p.pt6 { 
+	height:30px !important;
+}
+#flashArea > table > tbody > tr > td > div.sti_area > p:nth-child(6) { 
+	display:none;
+}
+
+#dest-lang-curr > li { width:37px !important; }
+#global_wrap .global .sel { width:auto !important; }
+#flashArea > table > tbody > tr > td > div.sti_area > p.pt6 { overflow:hidden }
+
+#main_container > div.best_wrap > div > div.brandTit p { cursor:pointer }
+#main_container > div.mbodySub_contents > div.linemap > div > ul > li > a, #flashArea > div > ul > li  a { height:23px; line-height:23px; }
+
+#goods_list > table > tbody > tr > td > div > div.fr.mt10 p, #flashArea > table > tbody > tr > td > div.sti_area > div.fr.mt10 p { display:none }
+#rel_product > tbody > tr > td > div.sti_area > p.review, #rel_product > tbody > tr > td > div.sti_area > div > p { display:none }
+#rel_product > tbody > tr > td > div.sti_area > div.fl.mt6, #rel_product > tbody > tr > td > div.sti_area > div.fr.pt6 { display:none }
+#rel_product > tbody > tr > td > div.sti_area > p.pt8 b, 
+#rel_product > tbody > tr > td > div.sti_area > p.pt8  { 
+    font-size: 20px;
+    color: #e61c38 !important;
+    font-family: 'Verdana';
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+#bx-pager > a { cursor:pointer }
+#searchedKwd > strong { padding:3px 5px; letter-spacing:0; font-family:'Verdana'; }
+
+#global_wrap .mylink .my_right { position:relative }
+
+#main_container > div.mbodySub_contents > div.p10.pt14.pl5 > h2 > a { padding:5px }
+#main_container > div.mbodySub_contents > div.p10.pt14.pl5 > h2 > a:last-child { padding-right:10px }
+
+.site_wrap h3 a { font-size:17px; color:#000; line-height:25px }
+
+#flashArea > form > table > tbody > tr:nth-child(2) > td:nth-child(9) > a > img { display:none; }
+
+#slide_cart_content > div.lyc_01 > div > ul > li > ul > li:nth-child(3) > span.gray_04 { display:none; }
+
+#main_container > div.event_img > ul > li:nth-child(2) { height:74px; padding:30px; background-color:#fff; }
+
+input.event_ipu { 
+	width:760px;
+	height:70px;
+	border:2px solid #4e504f;
+	border-radius:3px;
+	padding-left:20px;
+	margin-right:25px;
+	line-height:70px;
+	color:#333;
+	font-size:16px;
+	font-weight:500;
+	}
+
+table.event_tb { 
+	width:1100px;
+	border-top:2px solid #4e504f;
+	border-bottom:2px solid #4e504f;
+	}
+
+table.event_tb thead th { 
+	height:40px;
+	color:#333;
+	line-height:40px;
+	padding:10px 20px;
+	font-size:16px;
+	}
+
+table.event_tb tbody td { 
+	height:40px;
+	color:#555;
+	line-height:30px;
+	padding:5px 60px 0 20px;
+	font-size:15px;
+	border-top:1px solid #ccc;
+	text-align:center;
+	}
+
+table.event_tb tbody td:nth-child(even) { 
+	text-align:left;
+	padding:0 20px 0 20px;
+	}
+
+
+#main_container > div.mbodySub_contents > .bestSeller > div.fl > h2, 
+#main_container > div.mbodySub_contents > .bestSeller > div.fl > h2 {
+	font-size:22px !important;
+	padding-bottom:3px !important;
+	letter-spacing:0; 
+	line-height:15px;
+	}
+
+#main_container > form > div.pt10.pr0.pb8.pl5 > div.goods_list_kind.fr > a.list_view { margin-right:30px }
+
+
+#global_wrap .global .wechat_top p {
+	background-color:#000;
+	 position:absolute;
+	 top:33px;
+	 right:150px;
+	 cursor:pointer;
+	 }
+
+#global_wrap .global .wechat_pop { 
+	display:none;
+	position:absolute;
+	top:-3px;
+	right:750px;
+	z-index:10;
+	}
+
+#global_wrap .global .wechat_close {
+	position:absolute;
+	top:0;
+	right:-30px;
+	z-index:10;
+	cursor:pointer;
+	}
+
+.tsearch_box, input#top_keyword[placeholder] { color:#616161; }
+.tsearch_box, input#top_keyword  { font-size:16px !important; line-height:1.6em !important; }
+
+#goods_list > table > tbody > tr > td > div.fl > span.size_view { display:none }
+#goods_list > table > tbody > tr > td > div.fl.pl5 { display:none }
+#goods_list > table > tbody > tr > td.c > a { display:none }
+#goods_list > table > tbody > tr > td > div.fr.mt4 { display:none }
+
+#main_container > div.event_img > ul > li:nth-child(1) > div { right:100px !important}
+
+.goods_detail_info b:nth-child(1) { font-size:20px; font-weight:normal; }
+
+#f1 > div.bgf4.p20.fs11.dot.pr60 > div:nth-child(1) > b { font-size:13px !important }
+
+.table_empty_top { 
+	font-size:17px;
+	text-align:center;
+	padding:30px 0 0 0;
+	color:#333;
+}
+
+.table_empty_contens {
+	font-size:12px;
+	text-align:center;
+	padding:0 0 30px 0; 
+	border-bottom:1px solid #ccc;
+}
+
+.table_total_td { background-color:#f2f2f2; }
+.table_total_pr_txt { text-align:center; font-size:15px; font-weight:bold; padding:20px; color:#ea0000; }
+.table_total_qu_txt { text-align:center; font-size:15px; font-weight:bold; padding:20px; color:#ea0000; }
+.event_img .addthis_sharing_toolbox { text-align:right; margin-bottom:20px; padding-right:50px;  }
+.mbody_Brand ul { margin-top:70px !important }
+
+p.jumpPrice { margin-top:0 !important }
+
+#TAB11_SUB1 > dl > dd:nth-child(2),
+#TAB11_SUB2 > dl > dd:nth-child(2),
+#TAB12_SUB1 > dl > dd:nth-child(2),
+#TAB12_SUB2 > dl > dd:nth-child(2),
+#TAB13_SUB1 > dl > dd:nth-child(2),
+#TAB13_SUB2 > dl > dd:nth-child(2),
+#TAB14_SUB1 > dl > dd:nth-child(2),
+#TAB14_SUB2 > dl > dd:nth-child(2),
+#TAB15_SUB1 > dl > dd:nth-child(2),
+#TAB15_SUB2 > dl > dd:nth-child(2),
+#TAB16_SUB1 > dl > dd:nth-child(2),
+#TAB16_SUB2 > dl > dd:nth-child(2),
+#TAB17_SUB1 > dl > dd:nth-child(2),
+#TAB17_SUB2 > dl > dd:nth-child(2) { padding-bottom:0 !important }
+
+#TAB11_SUB1 > ul > li,
+#TAB11_SUB2 > ul > li,
+#TAB12_SUB1 > ul > li,
+#TAB12_SUB2 > ul > li,
+#TAB13_SUB1 > ul > li,
+#TAB13_SUB2 > ul > li,
+#TAB14_SUB1 > ul > li,
+#TAB14_SUB2 > ul > li,
+#TAB15_SUB1 > ul > li,
+#TAB15_SUB2 > ul > li,
+#TAB16_SUB1 > ul > li,
+#TAB16_SUB2 > ul > li,
+#TAB17_SUB1 > ul > li,
+#TAB17_SUB2 > ul > li { padding-bottom:5px !important }
+
+#quick_L { z-index:2500 !important; }
+
+.genuine_pop {
+	display:none;
+	position:absolute;
+	top:0;
+	left:100px;
+	z-index:100;
+	}
+
+div.at-cv-lightbox { display:none !important }
+
+#quick_L > p > img { width:86px; height:74px; }
+
+#newFooter > div > div > p { top:155px !important; }
+
+#main_container > div.pt40 > div.goods_detail_info > li { font-size:20px; line-height:20px; }
+
+.event_img #flashArea > table > tbody > tr > td { word-break:break-all }
+
+#main_container > div.event_img > ul > li:nth-child(1) > div { 
+	top:10px !important;
+	right:15px !important;
+    font-family:tahoma !important;
+	font-size:20px !important;
+	color:#00499c !important;
+	}
+
+#main_container > div.event_img > ul > li:nth-child(1) > div > div:nth-child(1) { padding:0 15px 0 0 !important; }
+#main_container > div.event_img > ul > li:nth-child(1) > div > div:nth-child(1), #main_container > div.event_img > ul > li:nth-child(1) > div > div:nth-child(2) { float:left } 
+
+#form > div.pt30 > div > table > tbody > tr:nth-child(7) > td > textarea { 
+	width:858px !important;
+	height:300px !important;
+	}
+
+/* #global_wrap .global p a {
+	position:absolute;
+	top:22px;
+	left:5px;
+	display:block;
+	width:217px;
+	height:58px;
+	background-image:url('https://img.koreanmall.com/img/common/logo_.gif');
+	background-repeat:no-repeat;
+	}
+ */
+#global_wrap .global p a {
+	position:absolute;
+	top:22px;
+	left:5px;
+	 display:block;
+	width:154px;
+	height:58px;
+	background:url('https://img.koreanmall.com/img/new_main/cmm_set.gif') no-repeat 0 0;
+	text-indent:-20000px;
+	}
+#global_wrap .global p a.logo_korea {
+	width:194px;
+	background-position:0 -200px;
+	}
+#main_container > div.plan_txt { 
+	font-size:12px;
+	color:#666 ;
+	margin-bottom:60px;
+	line-height:20px;
+	background-color:#f2f2f2;
+	padding:15px 20px;
+	}
+
+#main_container > div.plan_txt b {
+	font-size: 14px;
+	font-weight:normal;
+	color:#000;
+	line-height:30px;
+	}
+
+#main_container > div.plan_txt ol {
+	padding-left:15px;
+	padding-bottom:10px;
+	}
+
+.mbody_Brand .brandList1 {
+	width:869px !important;
+	padding-left:10px;
+	}
+
+#newFooter .FooterCenterWrap div.ft { 
+	position: absolute;
+    width: 960px;
+    height: 39px;
+    color: #4c4c4c;
+	font-size:12px;
+	line-height:38px;
+    top: 0;
+    left: 0;
+    text-align: left;
+	}
+
+.shipping_pay {
+	border:5px solid #dedede;
+	padding:40px;
+	line-height:20px;
+	}
+
+.shipping_pay h2 { 
+	font-size:30px;
+	color:#999;
+	font-weight:bold;
+	line-height:30px;
+	letter-spacing:-1px;
+	}
+
+.shipping_pay h2 span {
+	font-weight:normal;
+	font-size:18px;
+	}
+
+.shipping_pay b {
+	padding:10px 0 0 0;
+	font-size:15px;
+	display:inline-block;
+	}
+
+.shipping_pay b:last-child { padding-top:5px }
+.shipping_pay b img { padding-left:7px }
+.shipping_pay em { 
+	padding:3px 4px;
+	margin:5px 0;
+	line-height:200%;
+	}
+
+#form > div.pt30 > div > table > tbody > tr:nth-child(9) > td.c888 > p:nth-child(3) { margin-left:240px; }
+#form > div.pt30 > div > table > tbody > tr:nth-child(9) > td.c888 > p:nth-child(3) > button { border:none; }
+#form > div.pt30 > div > table > tbody > tr:nth-child(9) > td.c888 > p:nth-child(3) > button > span {
+	width:200px;
+	height:60px;
+	line-height:60px;
+	font-size:18px;
+	border-radius:10px;
+	background-color:#F03551;
+	font-weight:bold;
+	-webkit-border-radius: 10px;
+	border:none;
+	}
+
+.table_02 th { 
+	background:none !important; 
+	border-bottom:1px solid #ddd;
+}
+
+.goods_detail_info { 
+	width:900px;
+	margin:0 auto;
+	text-align:left !important;
+}
+
+.goods_detail_info table { width:900px !important; }
+
+#global_wrap > div.global > div.mylink > h1 { 
+	position:absolute;
+	left:380px;
+	color:#ccc;
+	width:250px;
+	height:15px;
+	overflow:hidden;
+	font-weight:normal;
+	top:0;
+	font-size:12px;
+	line-height:14px;
+	}
+
+#main_container > div.mbodySub_contents > div > div > table > tbody > tr > td > div { width:188px; overflow:hidden; }
+
+#goods_list > table > tbody > tr > td > div.sti_area > div.fr > a > img { display:none; }
+
+#main_container > div.main_sitemap > h2 {
+	display:block;
+	height:30px;
+	padding:10px 15px;
+	line-height:30px;
+	margin:0
+	}
+
+#main_container > div.main_sitemap > ul {
+	border-top:3px solid #333;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+	padding:15px 20px;
+	}
+
+.new_w p.lBanner {
+	left:257px !important;
+	top:357px !important;
+	border:3px solid #fff !important;
+	padding:7px;
+	background-color:#fff !important;
+	}
+
+.new_w p.lBanner:hover { border:3px solid #e83637 !important }
+.new_w p.lBanner a img { border:1px solid #ccc }
+
+.mp_list_sub li { height:22px; }
+
+#rel_product > tbody > tr > td > a { padding:0 !important }
+
+#main_container > div.pt15 > h2.stle_01 { 
+	font-size: 14px !important;
+	line-height: 14px;
+	height:14px;
+	display:block;
+	margin:5px 0 20px 0;
+	}
+
+#main_container > div.pt15 > h2.stle_01 em { color:#999 }
+#main_container > div.pt15 > h2.stle_01 b { color:#000; font-weight:normal }
+
+#en_01 > iframe { display:none }
+
+#product_info > div.dtarr_02 > p > a > img { display:none; }
+
+#main_container h2.info { 
+	font-size:22px;
+	display:block;
+	line-height:25px;
+	padding:10px 10px 10px 20px;
+	font-weight:normal;
+	background-image:url('https://img.koreanmall.com/img/cscenter/ico_h2.gif');
+	background-repeat:no-repeat;
+	background-position:left 12px;
+	}
+
+#main_container .table { width: 855px; float:left; }
+#main_container .info_img { 
+	width:225px;
+	float:left;
+	padding:10px;
+	}
+
+#main_container > div.table { 
+	font-size:13px;
+	line-height:21px;
+	border-top:2px solid #333;
+	background-image:url(https://img.koreanmall.com/img/f2f2f2.gif);
+	background-repeat:repeat-y;
+	height:297px;
+	margin-top:10px;
+	}
+
+#main_container > div.table > dl { 
+	border-bottom:1px solid #ccc;
+	height:auto;
+	display:inline-block;
+	-webkit-margin-before:0px;
+	-webkit-margrin-after:0px 
+	}
+
+#main_container > div.table > dl > dd span:nth-child(1) { 
+	display:inline-block;
+	width:235px;
+	padding:10px;
+	height:auto;
+	vertical-align:top;
+	}
+
+#main_container > div.table > dl > dd span:nth-child(2) {
+	display:inline-block;
+	width:580px;
+	padding:10px;
+	height:auto;
+	}
+
+#main_container > div.table > dl > dd span:nth-child(2) b { color:#222; }
+#main_container > div.table > dl > dd span a, #main_container > div.table_nb > dl > dd a {
+	text-decoration:underline;
+	color:#06C;
+	}
+
+#main_container .table_nb {
+	width: 630px;
+	float:left;
+	font-size:13px;
+	line-height:21px;
+	border-top:2px solid #333;
+	height:145px;
+	margin-top:10px;
+	}
+
+#main_container .info_img {
+	width:225px;
+	float:left;
+	padding:10px 10px 10px 0;
+	}
+
+#main_container > div.table_nb > dl {
+	border-bottom:1px solid #ccc;
+	height:auto;
+	display:inline-block;
+	-webkit-margin-before:0px;
+	-webkit-margrin-after:0px 
+	}
+
+#main_container > div.table_nb > dl > dd {
+	padding:10px;
+	display:inline-block;
+	width:610px;
+	height:auto;
+	}
+
+#main_container .table_ful {
+	width: 1100px;
+	font-size:13px;
+	line-height:21px;
+	border-top:1px solid #ccc;
+	margin-top:10px;
+	}
+
+#main_container > div.table_ful > dl { border-bottom:1px solid #ccc; }
+#main_container > div.table_ful > dl > dd { padding:10px; }
+#main_container > div.table_ful > dl:nth-child(2) > dd > img:nth-child(1),
+#main_container > div.table_ful > dl:nth-child(2) > dd > img:nth-child(2),
+#main_container > div.table_ful > dl:nth-child(2) > dd > img:nth-child(3) { padding-right:10px; }
+#main_container > div.table_ful > dl:nth-child(1) > dd > span {
+	display:inline-block;
+	width:25%;
+	text-align:center;
+	}
+
+#main_container .table_ful_2 {
+	width: 1100px;
+	font-size:13px;
+	line-height:21px;
+	border-top:1px solid #ccc;
+	margin-top:10px;
+	}
+
+#main_container > div.table_ful_2 > dl {
+	border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+	}
+
+#main_container > div.table_ful_2 > dl > dd { padding:10px; }
+#main_container > div.table_ful_2 > dl:nth-child(2) > dd > img:nth-child(1),
+#main_container > div.table_ful_2 > dl:nth-child(2) > dd > img:nth-child(2),
+#main_container > div.table_ful_2 > dl:nth-child(2) > dd > img:nth-child(3) { padding-right:10px; }
+#main_container > div.table_ful_2 > dl:nth-child(1) > dd > span {
+	display:inline-block;
+	width:16.66%;
+	text-align:center;
+	}
+
+#product_info > div.dtarr_02 > div p span { color:#06C; }
+#detailRefund { color:#06c !important }
+.cateV7 > a { color:#016bf5 !important }
+
+#main_container > div.allEvt.pt10 > ul > li > a > img {
+	overflow:hidden;
+	width:545px;
+	height:198px;
+	}
+.jumpPrice { color:#e61c38 !important; }
+
+.jumpTit { 
+	font-size:11px;
+	color:#666;
+	margin-bottom:3px;
+	height:27px;
+	line-height:14px;
+	}
+.brand_eng { width:1100px !important; }
+
+div.brand_eng a { 
+	width:272px;
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 5px;
+}
+
+.SearchRank { display:none }
+
+.top_bxShadow {
+	-moz-transition: all 300ms;
+	-o-transition: all 300ms;
+  	-webkit-transition: all 300ms;
+	transition: all 300ms;
+	opacity:0;
+}
+.top_bxPager:hover .top_bxShadow { 
+	opacity:1;
+}
+
+.top_bxSlider {
+	width:215px;
+	height:78px;
+	display:block;
+	overflow:hidden;
+}
+.kpop_detail_notice {
+    width: 910px;
+    height: 200px;
+    margin: 0 auto;
+}
+.kpop_detail_notice > p { 
+    display: inline-block;
+    vertical-align: middle;
+}
+.kpop_detail_notice > span > ul { 
+    display: inline-block;
+    vertical-align: middle;
+}
+.kpop_detail_notice > span > ul  > li {
+    text-indent: -17px;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 21px;
+	color:#666;
+}
+.kpop_detail_notice > span > ul  > li:first-child {
+	font-size:18px;
+	color:#222;
+	line-height:26px;
+}
+#flashArea form#form h2.stle_01 {
+    margin-bottom: 15px;
+}
+.zopim {
+	right: 42px !important;
+}
+.shippingfree {
+	position:relative;
+}
+.discount_detail.on {
+	display:block !important;
+}
+.discount_detail {
+	position:absolute;
+	display:none;
+	top:0px;
+	right:0px;
+}
+.discount_detail p {
+	text-align:center;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:14px;
+	line-height:130%;
+}
+.discount_txt {
+	margin-left:30px;
+	text-transform:lowercase;
+}
+.discount_txt span {
+	margin-left:10px;
+	font-weight:bold;
+}
+.discountWrap {
+	position:relative;
+}
+.discount_arrow {
+	position:absolute;
+	top:7px;
+	left:-7px;
+	width:60px;
+}
+.discount_arrow span {
+	position:absolute;
+	width:60px;
+	height:1px;
+	background:red;
+	}
+.discountWrap .priceBefore {
+	margin-right:20px;
+	color:#666;
+}
+.discount_arrow span:after {
+	content:'>';
+	position: absolute;
+	top: -7px;
+	right: 0px;
+	font-size: 14px;
+	font-weight: 200;
+	color: red;
+}
+.discount_products .discount_list li  { 
+    width : 194px !important ;
+    overflow : hidden;
+    padding : 8px;
+    margin-bottom : 40px; 
+    border : #fff solid 3px;
+    margin-right : 0 !important ;
+	float:left;
+} 
+.discount_products .discount_list li .saleP  { 
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    background: url('https://img.koreanmall.com/img/common/sale_2017.png') no-repeat;
+    width: 59px;
+    height: 58px;
+} 
+.discount_products .discount_list li .saleP p  { 
+    color: #ed1c24;
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 600;
+    text-align: center;
+    padding: 22px 2px 0 4px;
+} 
+.discount_products .discount_list li .saleP p em { 
+	font-size: 14px;
+    font-weight: normal;
+}
+.discount_products .discount_list li:hover  { 
+    border : #fff solid 3px;
+} 
+.discount_products .discount_list li dl  { 
+    height : 310px;
+} 
+.discount_products .discount_list li dl dt  { 
+    cursor : pointer;
+    padding : 10px 0 15px 0;
+} 
+.discount_products .discount_list li dl dd  { 
+    margin-top : 10px;
+    font : 12px/16px roboto, "ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â®ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã‚Â¤Ãƒâ€šÃ‚Â½ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ", "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+    color : #555;
+} 
+.discount_products .discount_list li dl dd .jumpPrice  { 
+    width : 194px;
+    position : relative;
+    margin-top : 8px;
+    color : #ed1b24; 
+    font-weight : 600;
+    font-size : 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height : 20px; 
+} 
+
+/* Join Event (2017/03/09) */
+.eventCont {
+	color:#000;
+}
+.eventCont.joinevent {
+	background:#ffffe3 url('https://img.koreanmall.com/img/event/joinevent/joinevent_bg02.png') 93% 60% no-repeat;
+	padding:50px 50px 30px 50px;
+}
+.eventCont h5 {
+	font-size:30px;
+	font-weight:400;
+	line-height:150%;
+	color:#000;
+	margin-left:25px;
+}
+.eventCont dl {
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:25px;
+}
+.eventCont dl dt {
+	font-size:20px;
+	font-weight:400;
+	line-height:150%;
+	margin-bottom:15px;
+}
+.eventCont dl dd {
+	font-size: 14px;
+	font-weight:400;
+	line-height:150%;
+	margin-bottom:8px;
+}
+.eventBigBtn {
+	background:#ef453d;
+	border:4px solid #f79544;
+	border-radius:10px;
+	width:400px;
+	height:70px;
+	display:inline-block;
+	text-align:center;
+	font-size:17.5px;
+	line-height:60px;
+	color:#fff;
+	box-shadow:0.5px 0.5px 8px #999;
+}
+.eventBigBtn.orange {
+	background:#ef743d;
+}
+.eventBigBtn:hover {
+	text-decoration:underline;
+}
+#joinevent {
+	width:1100px;
+	height:790px;
+	overflow:hidden;
+}
+/* Join Event (2017/03/09) */
+
+/* Register Page (2017/03/20) */
+.register_inputWrap {
+	width:550px;
+	margin:0px auto;
+}
+.register_inputWrap h3 {
+	font-size:16px;
+	border-bottom:1px solid #000;
+	padding-top:30px;
+	padding-bottom:10px;
+}
+.sel_ctyCode {
+    width: 84px;
+    height: 24px;
+    padding: 0 20px 0 5px;
+    overflow:hidden;
+    border: #cdcdcf solid 1px;
+	background: url('https://img.koreanmall.com/img/common/select_arrowz.png') 95% no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.mobile_country {
+    width: 100%;
+    height: 25px;
+    padding: 0 20px 0 5px;
+    display:inline-block;
+    border: #cdcdcf solid 1px;
+	background: url('https://img.koreanmall.com/img/common/select_arrowz.png') 95% no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.mobile_country::-ms-expand { 
+	display: none;
+}
+/* Register Page (2017/03/20) */
+
+/* Shipping Method 50% off Popup (Order Form) */
+.discount_popLayer:before {
+	content:url('https://img.koreanmall.com/img/common/shipping_paypop_top.png');
+	position:absolute;
+	top:-1px;	
+}
+.discount_popLayer {
+	position:absolute;
+	top:107px;
+	left:47px;
+	width:180px;
+	height:95px;
+	padding: 13px 20px;
+	z-index:999;
+	}
+.discount_popLayer::after {
+	content:url('https://img.koreanmall.com/img/common/shipping_paypop_bottom.png');
+	position:absolute;
+}
+.discount_popLayer p {
+	background:url('https://img.koreanmall.com/img/common/shipping_paypop_mid.png');
+	padding:0 15px;
+	color: #3f3f3f;
+	font-family: 'roboto',sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height: 122%;
+}
+/* Shipping Method 50% off Popup (Order Form) */
+
+
+.detail_text_addinfo {
+    margin-bottom: 40px;
+	padding:40px;
+}
+.detail_text_addinfo img {
+    max-width: 100%;
+}
+.detail_text_addinfo > h3 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.detail_text_addinfo > h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.detail_text_addinfo > p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.detail_text_addinfo > li {
+    font-size: 14px;
+    line-height: 22px;
+}
+.detail_text_addinfo > p > b {
+    font-weight: 500;
+}
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>i-FMS 관리자 페이지</title>
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link href="css/jquery.selectbox.css" rel="stylesheet">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.selectbox-0.2.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/selectbox_control.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="js/PIE.js"></script>
+		<![endif]-->
+ </head>
+ <body>
+ <div class="wrapper">
+	<div class="header">
+		<div class="ifms_header">
+			<div class="ifms_logo">
+				<a href="index.html"><img src="img/ifms_logo.png"></a>
+			</div>
+			<div class="ifms_loginfo">
+				<ul>
+					<li class="loginfo01"><span class="loginfo_user">홍길동</span> 님 환영합니다.</li>
+					<li class="loginfo02"><a href="config_myinfo.html">정보수정</a></li>
+					<li class="loginfo_btn"><a href="login.html">로그아웃</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="ifms_gnb">
+				<li><a href="facility.html">공동시설관리</a></li>
+				<li><a href="civil.html">민원관리</a></li> 
+				<li><a href="ext.html">연장근무관리</a></li>
+				<li class="on"><a href="config_user.html">시스템 설정</a></li>
+				<li><a href="log_day.html">접속로그조회</a></li>
+				<li><a href="notice.html">공지사항</a></li>
+				<li><a href="event.html">행사 및 이벤트</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="sub_lnb">
+			<h3 class="sub_title">시스템 설정</h3>
+			<div class="lnb_nav">
+				<ul>
+					<li class="first"><a href="index.html"><img src="img/lnb_home.png" alt="홈으로 가기" /></a></li>
+					<li><a href="#">시스템 설정</a></li>
+					<li><a href="#">구역 설정</a></li>
+				</ul>
+			</div>
+			<ul class="lnb_list clearfix">
+				<li><a href="config_user.html">사용자 등록</a></li>
+				<li class="on"><a href="config_area.html">구역 설정</a></li>
+				<li><a href="config_goods.html">비품 등록</a></li>
+				<li><a href="config_sms.html">SMS 설정</a></li>
+				<li><a href="config_db.html">데이터베이스 설정</a></li>
+			</ul>
+		</div>
+		<div class="sub_contents">
+			<!-- <div class="table_search pl590">
+				<ul class="btns">
+					<li class="blue"><a href="config_area_add.html">등록</a></li>
+					<li class="red"><a href="config_area_edit.html">수정</a></li>
+					<li class="gray"><a href="#">삭제</a></li>
+				</ul>
+			</div> -->
+			<table class="table center">
+				<colgroup>
+					<col style="width:5%;" />
+					<col style="width:8%;" />
+					<col style="width:15%;" />
+					<col style="width:5%;" />
+					<col style="width:5%;" />
+					<col style="width:8%;" />
+					<col style="width:5%;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="th_bg">순번</th>
+						<th class="th_bg">구역명</th>
+						<th class="th_bg">위치</th>
+						<th class="th_bg">설비제어</th>
+						<th class="th_bg">조명제어</th>
+						<th class="th_bg">등록일</th>
+						<th class="th_bg">사용가능</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>3F_D</td>
+						<td>3층 시설팀</td>
+						<td>N</td>
+						<td>Y</td>
+						<td>2015-12-08</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>2F_A</td>
+						<td>2층 총무팀</td>
+						<td>N</td>
+						<td>Y</td>
+						<td>2015-12-08</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>5F_A</td>
+						<td>5층 재무팀</td>
+						<td>N</td>
+						<td>Y</td>
+						<td>2015-12-08</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>3F_A</td>
+						<td>5층 인사팀</td>
+						<td>N</td>
+						<td>Y</td>
+						<td>2015-12-08</td>
+						<td>Y</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+			<div class="confirm_list">
+				<ul class="btns">
+					<li class="blue"><a href="config_area_add.html">등록</a></li>
+					<li class="red"><a href="config_area_edit.html">수정</a></li>
+					<li class="gray"><a href="#">삭제</a></li>
+				</ul>
+			</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="ifms_foot">
+			<!-- <div class="foot_top">
+				<ul class="foot_lnb">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">약관</a></li>
+					<li class="last"><a href="#">개인정보보호방침</a></li>
+				</ul>
+			</div> -->
+			<div class="foot_bottom">
+				<div class="foot_logo">
+					<img src="img/ifms_footlogo.jpg">
+				</div>
+				<div class="foot_address">
+					<p>대표전화 : 1566-5050 / 1588-5050 | 해외 : 82-53-742-5050</p>
+					<p>Copyright DAEGU BANK. All Rights Reserved.</p.
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+</html>

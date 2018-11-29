@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>i-FMS 사용자 페이지</title>
+  <link href="css/default.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+  <link href="css/jquery.selectbox.css" rel="stylesheet">
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.selectbox-0.2.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/selectbox_control.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="js/PIE.js"></script>
+		<![endif]-->
+ </head>
+ <body>
+ <div class="wrapper">
+	<div class="header">
+		<div class="ifms_header">
+			<div class="ifms_logo">
+				<a href="index.html"><img src="img/ifms_logo.png" alt="i-FMS 로고 이미지" /></a>
+			</div>
+			<div class="ifms_loginfo">
+				<ul>
+					<li class="loginfo01"><span class="loginfo_user">홍길동</span> 님 환영합니다.</li>
+					<li class="loginfo02"><a href="config_user.html">정보수정</a></li>
+					<li class="loginfo_btn"><a href="../login.html">로그아웃</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="ifms_gnb">
+				<li class="on"><a href="facility_list.html">공동시설관리</a></li>
+				<li><a href="civil_list.html">민원관리</a></li> 
+				<li><a href="ext_list.html">연장근무관리</a></li>
+				<li><a href="config_user.html">사용자 관리</a></li>
+				<li><a href="notice.html">공지사항</a></li>
+				<li><a href="event.html">행사 및 이벤트</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="sub_lnb">
+			<h3 class="sub_title">공동시설관리</h3>
+			<div class="lnb_nav">
+				<ul>
+					<li class="first"><a href="index.html"><img src="img/lnb_home.png" alt="홈으로 가기" /></a></li>
+					<li><a href="#">공동시설관리</a></li>
+					<li><a href="#">사용 신청</a></li>
+				</ul>
+			</div>
+			<ul class="lnb_list clearfix">
+				<li class="on"><a href="facility_add.html">사용 신청</a></li>
+				<li><a href="facility_list.html">사용 이력 조회</a></li>
+			</ul>
+		</div>
+		<div class="sub_contents">
+			<table class="table">
+				<colgroup>
+					<col style="width:3%;" />
+					<col style="width:10%;" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th class="th_bg">시설유형</th>
+						<td class="facility_room">
+							<select class="sorted_room">
+								<option value="회의실">회의실</option>
+								<option value="체육관">체육관</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_bg">사용일자</th>
+						<td class="sorted_day2">
+							<input type="text" value="2015-01-20">
+							<a href="#"><img src="img/ico_calendar.png" alt="달력 보기"/></a>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_bg">사용 시작시간</th>
+						<td>
+							<div class="th_starttime">
+								<select class="time_hour">
+									<option value="00시">00시</option>
+									<option value="01시">01시</option>
+									<option value="02시">02시</option>
+									<option value="03시">03시</option>
+									<option value="04시">04시</option>
+									<option value="05시">05시</option>
+									<option value="06시">06시</option>
+									<option value="07시">07시</option>
+									<option value="08시">08시</option>
+									<option value="09시">09시</option>
+									<option value="10시">10시</option>
+									<option value="11시">11시</option>
+									<option value="12시">12시</option>
+									<option value="14시">14시</option>
+									<option value="15시">15시</option>
+									<option value="16시">16시</option>
+									<option value="17시">17시</option>
+									<option value="18시">18시</option>
+									<option value="19시">19시</option>
+									<option value="20시">20시</option>
+									<option value="21시">21시</option>
+									<option value="22시">22시</option>
+									<option value="23시">23시</option>
+								</select>
+								<select class="time_minute">
+									<option value="00분">00분</option>
+									<option value="30분">30분</option>
+								</select>
+							</div>
+							<span class="th_middle">부터</span>
+							<div class="th_endtime">
+								<select class="time_hour">
+									<option value="00시">00시</option>
+									<option value="01시">01시</option>
+									<option value="02시">02시</option>
+									<option value="03시">03시</option>
+									<option value="04시">04시</option>
+									<option value="05시">05시</option>
+									<option value="06시">06시</option>
+									<option value="07시">07시</option>
+									<option value="08시">08시</option>
+									<option value="09시">09시</option>
+									<option value="10시">10시</option>
+									<option value="11시">11시</option>
+									<option value="12시">12시</option>
+									<option value="14시">14시</option>
+									<option value="15시">15시</option>
+									<option value="16시">16시</option>
+									<option value="17시">17시</option>
+									<option value="18시">18시</option>
+									<option value="19시">19시</option>
+									<option value="20시">20시</option>
+									<option value="21시">21시</option>
+									<option value="22시">22시</option>
+									<option value="23시">23시</option>
+								</select>
+								<select class="time_minute">
+									<option value="00분">00분</option>
+									<option value="30분">30분</option>
+								</select>
+							</div>
+							<span class="th_edge">(종료시간 : 11:30)</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_bg">사용인원</th>
+						<td class="area_search">
+							<input type="text" name="area_limit" value="20">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="confirm_list3">
+				<p class="date_btn blue">
+					<a href="#">검색</a>
+				</p>
+			</div>
+
+			<table class="table">
+				<colgroup>
+					<col style="width:3%;" />
+					<col style="width:10%;" />
+				</colgroup>
+
+				<tbody>
+					<tr>
+						<th class="th_bg">이용가능시설</th>
+						<td class="facility_room">
+							<select class="sorted_room">
+								<option value="회의실">회의실</option>
+								<option value="체육관">체육관</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_bg">신청비품</th>
+						<td class="goods_check">
+							<p>
+								<label for="goods_check01">빔 프로젝트</label>
+								<input type="checkbox" name="goods_check01" checked>
+							</p>
+							<p>
+								<label for="goods_check02">노트북</label>
+								<input type="checkbox" name="goods_check02">
+							</p>
+							<p>
+								<label for="goods_check01">모니터</label>
+								<input type="checkbox" name="goods_check03">
+							</p>
+							<p>
+								<label for="goods_check01">스피커</label>
+								<input type="checkbox" name="goods_check04">
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="confirm_list3">
+				<p class="date_btn blue">
+					<a href="facility_add_confirm.html">다음단계</a>
+				</p>
+			</div>
+		
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="ifms_foot">
+			<!-- <div class="foot_top">
+				<ul class="foot_lnb">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">약관</a></li>
+					<li class="last"><a href="#">개인정보보호방침</a></li>
+				</ul>
+			</div> -->
+			<div class="foot_bottom">
+				<div class="foot_logo">
+					<img src="img/ifms_footlogo.jpg">
+				</div>
+				<div class="foot_address">
+					<p>대표전화 : 1566-5050 / 1588-5050 | 해외 : 82-53-742-5050</p>
+					<p>Copyright DAEGU BANK. All Rights Reserved.</p.
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+</html>
