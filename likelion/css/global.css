@@ -1,0 +1,120 @@
+@charset "utf-8";
+/**************************************************
+	
+	Global
+	
+**************************************************/
+.__viewFooterBtns{ text-align:center; padding-top:40px; }
+.__viewMobileModeBtn{ width:90%; font-size:50px !important; padding:30px !important; }
+
+.__article_sment{ line-height:15px; font-size:11px; display:block; color:#666; padding-top:4px; }
+
+.__paging_area{ margin:0; padding:0; padding-top:10px; list-style-type:none; text-align:center; line-height:13px; font-size:0; }
+.__paging_area li{ vertical-align:middle; border:1px solid #DCDCDC; margin:0 3px; line-height:0; }
+.__paging_area .___paging_num_active{color: #ffffff;width: 41px;height: 21px; text-align:center; padding:10px 0;border-color: #df2027;background: #df2027;line-height: 21px !important;font-size: 18px;font-family: "Open Sans",sans-serif;font-weight: 300;display:inline-block; *zoom:1; *display:inline;}
+.__paging_area .___paging_num{ color:#333333; font:12px tahoma; display:inline-block; *zoom:1; *display:inline; }
+.__paging_area .___paging_num > a{ display:block; width:30px; text-align:center; padding:10px 0; line-height:8px; }
+.__paging_area .___paging_num:hover{ border-color:#DA2044; }
+.__paging_area .___paging_num:hover > a{ color:#000; text-decoration:none; }
+.__paging_area .___paging_after,
+.__paging_area .___paging_after2,
+.__paging_area .___paging_before,
+.__paging_area .___paging_before2{ border:none; display:inline-block; *zoom:1; *display:inline; }
+.__paging_area .___paging_after > a,
+.__paging_area .___paging_after2 > a,
+.__paging_area .___paging_before > a,
+.__paging_area .___paging_before2 > a{ padding:10px 3px; text-align:center; display:block; font-size:11px; color:#999; letter-spacing:-1px; }
+.__paging_area .___paging_after > a:hover,
+.__paging_area .___paging_after2 > a:hover,
+.__paging_area .___paging_before > a:hover,
+.__paging_area .___paging_before2 > a:hover{ color:#000; text-decoration:none; }
+.__paging_area .___paging_after > a,
+.__paging_area .___paging_after2 > a{ font-size:11px; color:#999; letter-spacing:-1px; }
+.__paging_area .___paging_after > a img,
+.__paging_area .___paging_after2 > a img{ padding-left:3px; }
+.__paging_area .___paging_before > a img,
+.__paging_area .___paging_before2 > a img{ padding-right:3px; }
+
+/**************************************************
+	login
+**************************************************/
+#loginForm{ width:440px; margin:40px auto; }
+#loginForm .inner{ zoom:1; apadding:15px; margin-top:10px; }
+#loginForm .inner:after{ content:""; display:block; clear:both; }
+#loginForm .inner > input.id,
+#loginForm .inner > input.password{ background-color:#fff; border:1px solid #DADADA; height:14px; width:304px; padding:10px; }
+#loginForm .inner > input.id{ margin-bottom:5px; }
+#loginForm .inner > input.submit{ float:right; width:110px; height:77px; cursor:pointer; background:#333447; color:#fff; font:16px MalgunGothic; font-weight:bold; border:none; }
+#loginForm .inner > .checkArea{ display:block; padding-top:10px; font-size:11px; color:#999; }
+#loginForm .btnArea{ margin:0; margin-top:15px; padding:10px; text-align:center; list-style-type:none; }
+#loginForm .btnArea > li{display:inline-block; *display:inline; *zoom:1; }
+#loginForm .btnArea > li > a{  padding:0 20px; border-left:1px solid #D8D8D8; font-weight:bold; }
+#loginForm .btnArea > li:first-child > a{ border-left:none; }
+
+/**************************************************
+	account
+**************************************************/
+#accountForm > h3{ margin-bottom:20px; }
+#accountForm .chkArea{ text-align:right; padding-top:5px; padding-bottom:10px; color:#666; font-size:11px; }
+#accountForm .btnArea{ text-align:center; padding-top:15px; }
+#idCheckBone{ width:450px; margin:40px auto; }
+#idCheckBone h3{ font-size:18px; }
+#idCheckBone .txt{ background-color:#f6f6f6; border:1px solid #eee; border-top:2px solid #A4A4A4; padding:15px; margin-top:10px; }
+#idCheckBone .btnArea{ margin:0; margin-top:15px; padding:10px; text-align:center; list-style-type:none; }
+
+/**************************************************
+	myPoint
+**************************************************/
+#myPointBone{ position:relative; padding-top:25px; }
+#myPointBone .totalPoint{ position:absolute; top:0; right:0; }
+
+/**************************************************
+	search_board
+**************************************************/
+#search_board .tab{ margin:0; padding:0; list-style-type:none; line-height:32px; }
+#search_board .tab > li{ display:inline-block; *display:inline; *zoom:1; margin-right:5px; line-height:20px; }
+#search_board .tab > li > a{ display:block; padding:5px 8px; }
+#search_board #searchBoardForm{ font-size:0; display:block; text-align:center; padding:10px 0 10px 0; margin-bottom:40px; background:#F7F7F7; border-top:2px solid #dedede; }
+#search_board #searchBoardForm > label{ font-size:12px; margin-right:10px; }
+#search_board #searchBoardForm > *{ vertical-align:middle; }
+#search_board #searchBoardForm .keyword{ width:250px; border:1px solid #333447; height:20px; padding:5px; margin-left:10px; }
+#search_board #searchBoardForm .submit{ background:#333447; border:none; height:32px; color:#fff; padding:0 15px; cursor:pointer; }
+#search_board > h5{ display:block; padding-bottom:40px; font-size:20px; font-family:MalgunGothic; font-weight:normal; text-align:center; }
+#search_board .tab{ font-size:0; margin:0; padding:0; list-style-type:none; }
+#search_board .tab > li{ display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin-right:2px; }
+#search_board .tab > li > a{ padding:5px 10px; display:block; background:#333447; color:#fff; }
+#search_board .tab > li > a:hover,
+#search_board .tab > li.active > a{ background:#505162; text-decoration:none; }
+#search_board .search_board_list{ margin:0; padding:0; padding-top:10px; list-style-type:none; }
+#search_board .search_board_list .title{ position:relative; display:block; padding-bottom:10px; margin:30px 0 20px 0; border-bottom:1px solid #000; }
+#search_board .search_board_list .title .article_name{ font-size:16px; font-weight:bold; letter-spacing:-1px; font-family:MalgunGothic; color:#000; }
+#search_board .search_board_list .title .total_count{ font-size:11px; color:#999; padding-left:10px; }
+#search_board .search_board_list .title .more{ position:absolute; bottom:10px; right:0; color:000; font-size:11px; }
+#search_board .search_board_list .data_li{ font-size:0; display:block; padding:8px 0 8px 10px; }
+#search_board .search_board_list .data_li .data_title{ font-size:12px; font-weight:bold; color:#000; text-decoration:underline; }
+#search_board .search_board_list .data_li .balnk_window{ vertical-align:top; margin-left:10px; display:inline-block; *display:inline; *zoom:1; width:18px; height:18px; background:url(/web/20180105165528im_/http://like-lion.com/images/window.gif); }
+#search_board .search_board_list .data_li .data_memo{ font-size:11px; color:#666; display:block; display:block; padding-top:3px; }
+
+
+
+/*
+     FILE ARCHIVED ON 16:55:28 Jan 05, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:37:28 Nov 30, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 112.77 (3)
+  esindex: 0.006
+  captures_list: 151.525
+  CDXLines.iter: 12.026 (3)
+  PetaboxLoader3.datanode: 166.53 (4)
+  exclusion.robots: 0.214
+  exclusion.robots.policy: 0.197
+  RedisCDXSource: 23.836
+  PetaboxLoader3.resolve: 32.06
+  load_resource: 89.694
+*/

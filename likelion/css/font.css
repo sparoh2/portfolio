@@ -1,0 +1,95 @@
+/*  Noto Sans */
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('NotoSans-DemiLight'), local('NotoSans-DemiLight'), local('NotoSans-DemiLight');
+    src: url(./font/notosans/NotoSans-DemiLight.eot);
+    src: url(./font/notosans/NotoSans-DemiLight.eot#iefix) format('embedded-opentype'),
+    url(./font/notosans/NotoSans-DemiLight.woff) format('woff'),
+    url(./font/notosans/NotoSans-DemiLight.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('NotoSans-Regular'), local('NotoSans-Regular'), local('NotoSans-Regular');
+    src: url(./font/notosans/NotoSans-Regular.eot);
+    src: url(./font/notosans/NotoSans-Regular.eot#iefix) format('embedded-opentype'),
+    url(./font/notosans/NotoSans-Regular.woff) format('woff'),
+    url(./font/notosans/NotoSans-Regular.otf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
+    src: url(./font/notosans/NotoSans-Medium.eot);
+    src: url(./font/notosans/NotoSans-Medium.eot#iefix) format('embedded-opentype'),
+    url(./font/notosans/NotoSans-Medium.woff) format('woff'),
+    url(./font/notosans/NotoSans-Medium.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('Noto Sans Bold'), local('Noto Sans Bold');
+    src: url(./font/notosans/NotoSans-Bold.eot);
+    src: url(./font/notosans/NotoSans-Bold.eot#iefix) format('embedded-opentype'),
+    url(./font/notosans/NotoSans-Bold.woff) format('woff'),
+    url(./font/notosans/NotoSans-Bold.otf) format('truetype');
+}
+
+
+
+/* Open Sans */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('OpenSans-Light'), local('OpenSans-Light'), local('OpenSans-Light');
+    src: url(./font/opensans/OpenSans-Light.eot);
+    src: url(./font/opensans/OpenSans-Light.eot#iefix) format('embedded-opentype'),
+    url(./font/opensans/OpenSans-Light.woff) format('woff'),
+    url(./font/opensans/OpenSans-Light.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('OpenSans-Regular'), local('OpenSans-Regular'), local('OpenSans-Regular');
+    src: url(./font/opensans/OpenSans-Regular.eot);
+    src: url(./font/opensans/OpenSans-Regular.eot#iefix) format('embedded-opentype'),
+    url(./font/opensans/OpenSans-Regular.woff) format('woff'),
+    url(./font/opensans/OpenSans-Regular.otf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('OpenSans-Semibold'), local('OpenSans-Semibold'), local('OpenSans-Semibold');
+    src: url(./font/opensans/OpenSans-Semibold.eot);
+    src: url(./font/opensans/OpenSans-Semibold.eot#iefix) format('embedded-opentype'),
+    url(./font/opensans/OpenSans-Semibold.woff) format('woff'),
+    url(./font/opensans/OpenSans-Semibold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('OpenSans-Bold'), local('OpenSans-Bold'), local('OpenSans-Bold');
+    src: url(./font/opensans/OpenSans-Bold.eot);
+    src: url(./font/opensans/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
+    url(./font/opensans/OpenSans-Bold.woff) format('woff'),
+    url(./font/opensans/OpenSans-Bold.otf) format('truetype');
+}

@@ -1,0 +1,238 @@
+
+<!doctype html>
+<html>
+<title>LIKE LION</title>
+<meta name="viewport" content="initial-scale=0.25, maximum-scale=1.0, minimum-scale=0.25, user-scalable=yes, width=1200">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<link rel="shortcut icon" href="images/shortcut.ico"/>
+<link href="css/smart_editor2_in.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link href="css/common.css" rel="stylesheet" type="text/css"/>
+<link href="css/global.css" rel="stylesheet" type="text/css"/>
+<link href="css/font.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/global.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/ghost_html5.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript" src="js/global.js"></script></head>
+<body>
+<script type="text/javascript">
+
+//메인 GNB 호버
+$(document).ready(function(){
+	$('.depth2Wrap').hide();
+	$('.gnb > li').bind("mouseenter focusin", function() {
+		$(this).children(".depth2Wrap").show();
+	}).bind("mouseleave focusout", function() {
+		$(this).children(".depth2Wrap").hide();	
+	});
+});
+
+//검색폼 등장/숨기기 및 검색어 urlencode 처리
+$(document).ready(function(){
+	var $searchForm = $("form[name=searchForm]");
+	var $keyword_input = $("input[name=keyword]",$searchForm);
+	//검색폼 등장
+	function show_totalSearch_keyword_input(){
+		$keyword_input
+		.css({
+			"width":"0",
+		}).show()
+		.animate({
+			"width":"150px"
+		},200).focus();
+	}
+	$(".submit",$searchForm).click(function(e){
+		if($keyword_input.css("display")!="none"){
+			if($.trim($keyword_input.val())!=""){
+				$searchForm.submit();
+			}else{
+				e.preventDefault();
+				hide_totalSearch_keyword_input();
+			}
+		}else{
+			e.preventDefault();
+			show_totalSearch_keyword_input();
+		}
+	});
+	//검색폼 숨기기
+	function hide_totalSearch_keyword_input(){
+		$keyword_input
+		.animate({
+			"width":"0"
+		},200,function(){
+			$keyword_input.hide();
+		});
+	}
+	$keyword_input.blur(function(e){
+		if($.trim($keyword_input.val())==""){
+			hide_totalSearch_keyword_input();
+		}
+	});
+	//검색어 urlencode 처리
+	$searchForm.submit(function(e){
+		e.preventDefault();
+		var searchFormKeyword = encodeURIComponent($keyword_input.val());
+		document.location.href = __URL_PATH__+"?article=search_board&keyword="+searchFormKeyword;
+	});
+});
+</script>
+	<header>
+	<!-- topMenuWrap -->
+	<div class="topMenuWrap">
+		<!-- topMenu -->
+		<div class="topMenu">
+			<div class="topMenuList">
+				<div class="lang_select">
+					<ul>
+						<li class="on"><a href="javascript:;">KOR</a></li>
+						<li><a href="?viewType=e">ENG</a></li>
+						<li><a href="?viewType=j">JAP</a></li>
+					</ul>
+				</div>
+				<div class="sns_select">
+					<ul>
+						<li><a href="https://twitter.com/likelion8" target="_blank"><img src="images/sns_twitter.jpg" alt="트위터"/></a></li>
+						<li><a href="https://www.facebook.com/Likelion-1643943349204680/" target="_blank"><img src="images/sns_facebook.jpg" alt="페이스북"/></a></li>
+						<li><a href="https://www.instagram.com/like.lion/" target="_blank"><img src="images/sns_instagram.jpg" alt="인스타그램"/></a></li>
+						<li><a href="https://www.youtube.com/channel/UCQsNcNZyST41SxsbpKqybBw" target="_blank"><img src="images/sns_youtube.jpg" alt="유튜브"/></a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="statusWrap">
+				<ul class="status">
+					<li><a href="http://www.like-lion.com/?article=login&redirect=%3F">회원로그인</a></li><li><a href="http://www.like-lion.com/?article=account">신규 회원가입</a></li><li><a href="http://www.like-lion.com/?article=findPassword">비밀번호 찾기</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- topMenu -->
+	</div>
+	<!-- topMenuWrap -->
+	<div class="gnbWrap">
+			<div class="logo">
+				<a href="https://web.archive.org/web/20160702021620/http://www.like-lion.com/">
+					<h1><img src="https://web.archive.org/web/20160702021620im_/http://www.like-lion.com/upload/siteInformations/160201291613_5a7abdb0ca.png" title="라이크라이온(주)"/></h1>
+				</a>
+			</div>
+			<!-- <form name="searchForm" id="searchForm">
+				<input type="text" name="keyword" class="keyword" />
+				<input type="submit" value="" class="submit" />
+			</form> -->
+		<!-- gnb -->
+		<div class="gnbMenu">
+			<ul class="gnb">
+				<li><a href="?article=introduce">About us</a><div class="depth2Wrap"><div class="depth2"><span class="redline"></span><ul><li><a href="?article=ourstory">Our story</a></li><li><a href="?article=introduction">회사개요</a></li><li><a href="?article=history">회사연혁</a></li><li><a href="?article=organization">회사조직도</a></li><li><a href="?article=information">OWN FACTORY</a></li><li><a href="?article=partner">PARTNER SHIP</a></li><li><a href="?article=vision">기업비전</a></li><li><a href="?article=brochure"> Brochure</a></li></ul></li><li><a href="?article=certification">Product Development</a><div class="depth2Wrap"><div class="depth2"><span class="redline"></span><ul><li><a href="?article=business">Biz Areas</a></li><li><a href="?article=certifIc">WRAP인증</a></li><li><a href="?article=facilities">시설소개</a></li><li><a href="?article=manufacturing">제조공정</a></li></ul></li><li><a href="?article=brand">Brand Management</a><div class="depth2Wrap"><div class="depth2"><span class="redline"></span><ul><li><a href="?article=air">Airskin</a></li><li><a href="?article=anna">Anna's Friday</a></li><li><a href="?article=den">Denicheur</a></li><li><a href="?article=frederick">Zoogle</a></li></ul></li><li><a href="?article=center">Press Center</a></li><li><a href="?article=customer">Contact us</a></li><li><a href="?article=underwear">Underwear 101</a></li>
+			</ul>
+		</div>
+	</div>
+	</header><article id="main">
+	<!-- <div class="visual">
+	</div> -->
+	
+	<div class="cont">
+		
+		<!-- mainTextWrap -->
+		<div class="mainTextWrap">
+			<!-- main text -->
+			<div class="mainText">
+				<!-- main copy top -->
+				<h2 class="mainCopyTop">
+					<span class="gray">We</span>
+					<span class="gray">Create</span>
+					<span class="white">Beauty</span>
+				</h2>
+				<!-- main copy top -->
+
+				<!-- main copy bottom -->
+				<div class="mainCopyBottom">
+					<span class="mainTextLine">
+					</span>
+					<p class="subCopy">아름다움을 만드는 사람들</p>
+					<p>
+					</p>
+				</div>
+				<!-- main copy bottom -->
+			</div>
+			<!-- main text -->
+		</div>	
+		<!-- mainTextWrap -->			</div>
+</article>
+
+<footer>
+	
+<!-- footerWrap -->
+<div class="footerWrap">
+    <!-- footer logo -->
+    <div class="footerLogo">
+        <p>
+            라이크라이온
+        </p>
+    </div>
+    <!-- footer logo -->
+    <!-- footer info -->
+    <div class="footerInfo">
+        <!-- info top -->
+        <div class="infoTop">
+            <ul>
+                <li>
+                    <a href="https://web.archive.org/web/20160702021620/http://like-lion.com/?article=privacy">
+                        개인정보 취급방침
+                    </a>
+                    <span class="line">
+                    </span>
+                </li>
+                <li>
+                    <a href="https://web.archive.org/web/20160702021620/http://like-lion.com/?article=sitemap">
+                        사이트맵
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- info top -->
+        <!-- info bottom -->
+        <div class="infoBottom">
+            <address>
+                <p class="addName">
+                    (우) 02634 서울특별시 동대문구 한천로2길 77 (화성빌딩 ) 4층(장안동)
+                </p>
+                <p class="addPhone">
+                    <span>
+                        대표전화
+                    </span>
+                    02.496.9917
+                </p>
+                <p class="addFax">
+                    <span>
+                        팩스번호
+                    </span>
+                    02.511.1498
+                    <span class="line">
+                    </span>
+                </p>
+            </address>
+            <div class="copyright">
+                <p class="copyTxt">
+                    Copyright © 
+                    <span>
+                        2016 LIKE LION.
+                    </span>
+                    All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <!-- info bottom -->
+    </div>
+    <!-- footer info -->
+</div>
+<!-- footerWrap -->
+</footer></body>
+</html>
