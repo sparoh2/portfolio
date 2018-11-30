@@ -1,0 +1,130 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	background-color: #ffffff;
+	border: solid 1px #dfdfdf;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 30px;
+	position: relative;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 170px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #343434;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(/web/20160423233830im_/http://www.ibcm.tv/Images/common/select-icons.png) 0 -116px no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+.sbToggle:hover{
+	background: url(/web/20160423233830im_/http://www.ibcm.tv/Images/common/select-icons.png) 0 -167px no-repeat;
+}
+.sbToggleOpen{
+	background: url(/web/20160423233830im_/http://www.ibcm.tv/Images/common/select-icons.png) 0 -16px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(/web/20160423233830im_/http://www.ibcm.tv/Images/common/select-icons.png) 0 -66px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #ffffff;
+	border: solid 1px #dfdfdf;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	margin-top:5px;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #ddd;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #242424;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
+/*
+     FILE ARCHIVED ON 23:38:30 Apr 23, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:55:53 Nov 30, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 74.617 (3)
+  esindex: 0.014
+  captures_list: 97.501
+  CDXLines.iter: 12.761 (3)
+  PetaboxLoader3.datanode: 97.222 (4)
+  exclusion.robots: 0.366
+  exclusion.robots.policy: 0.342
+  RedisCDXSource: 5.447
+  PetaboxLoader3.resolve: 25.356
+  load_resource: 78.277
+*/

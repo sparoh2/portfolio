@@ -1,0 +1,54 @@
+/*팝업공통*/
+.layer_m {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:100;}
+.layer_m .bg {position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}
+.layer_m .po-layer {display:block;}
+.po-layer{display:none; position: absolute; top: 50%; left: 50%;   background-color:#fff; z-index: 100;} 
+.po-layer .title_zone{background:#0072bc url("../images/common/login_head_bg.png") no-repeat; background-position:350px 3px; height:62px;width:100%;text-align:left;}
+.po-layer .title_zone p{font-size:18px;padding:20px 0 0 0;font-weight:bold;padding-left:30px; color:#ffffff;}
+.po-layer .btn-r {position:absolute;top:20px;right:20px;;}
+a.cb {display:inline-block;} 
+
+
+/*로그인팝업*/
+.login{width: 612px;height: 268px;}
+.login .con_area:after{content:'';clear:left;display:block}
+.login .con_zone{font-size:18px;padding: 0px 105px 55px 105px;margin-top: 60px;}
+.login .con_zone p{text-align:center;}
+.login .con_zone a{margin-right:10px;display:inline-block}
+.login .con_zone a:hover{color:#ef5858;}
+.login .con_zone .bt_area_center a:hover{text-decoration:none;color:#fff;}
+.login .head_zone p.head1 { text-align:left; color:#10649a; font-size:18px; font-weight:bold; }
+.login .head_zone p.head2 { text-align:left; color:#3d3d3d; font-size:14px;  }
+
+.login .col1{float:left;}
+.login .col1 span{display:inline-block;width:65px;}
+.login .col1 label { font-weight:bold; }
+.login .col2{background:#193d76;color:#fff;float:left;width:76px;height:69px;margin-left:7px;text-align:center;line-height:500%:}
+.login .col2 a{color:#fff;line-height:500%;text-align:center;margin-right:0;}
+.login .col2 a:hover{text-decoration:none;color:#fff;}
+.login .bt_searchid{border-right:1px solid #ccc;padding-right:10px;height:12px;}
+.login input{width:230px;height:30px;border:1px solid #cbcbcb;}
+
+/*비밀번호 찾기 팝업*/
+.findpw{width: 612px;height:366px;}
+.findpw .con_area:after{content:'';clear:left;display:block}
+.findpw .con_zone{font-size:18px;padding: 0px 105px 55px 105px;margin-top: 32px;}
+.findpw .con_zone p{text-align:center;}
+.findpw .con_zone a{margin-right:10px;display:inline-block}
+.findpw .con_zone a:hover{color:#ef5858;}
+.findpw .con_zone .bt_area_center a:hover{text-decoration:none;color:#fff;}
+.findpw .head_zone { padding-top:30px; padding-left:30px; }
+.findpw .head_zone p.head1 { text-align:left; color:#10649a; font-size:18px; font-weight:bold; padding-bottom:5px; }
+.findpw .head_zone p.head2 { text-align:left; color:#3d3d3d; font-size:14px;  }
+
+.findpw .col1{float:left;}
+.findpw .col1 span{display:inline-block;width:65px;}
+.findpw .col1 label { font-weight:bold; }
+.findpw .col2{background:#193d76;color:#fff;float:left;width:76px;height:69px;margin-left:7px;text-align:center;line-height:500%:}
+.findpw .col2 a{color:#fff;line-height:500%;text-align:center;margin-right:0;}
+.findpw .col2 a:hover{text-decoration:none;color:#fff;}
+.findpw .bt_searchid{border-right:1px solid #ccc;padding-right:10px;height:12px;}
+.findpw input {width:310px;height:30px;border:1px solid #cbcbcb;}
+.findpw .colBtn { padding-left:110px; padding-right:110px; }
+.findpw .colBtn .btn01 a { width:76px; height:36px; background:#193d76; border-radius:5px; color:#ffffff; text-align:center; line-height:250%; }
+.findpw .colBtn .btn02 a { width:76px; height:36px; background:#6f6f6f; border-radius:5px; color:#ffffff; text-align:center; line-height:250%; }
