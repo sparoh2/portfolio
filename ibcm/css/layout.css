@@ -37,10 +37,9 @@
 }
 
 .top_banner {
-    width: 1000px;
-    margin: 0 auto;
     background: #0072bc;
     position: relative;
+    text-align: center;
 }
 
 
@@ -1008,7 +1007,7 @@
 .footer_leftWrap .leftLogo a {
     width: 188px;
     height: 53px;
-    background: url("../images/common/ibcm_footer_logo.png") no-repeat;
+    background: url("../images/common/ibcm_logo.png") no-repeat;
     display: block;
 }
 
